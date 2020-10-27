@@ -17,7 +17,7 @@ class PostModelTest(TestCase):
 
 
 class HomePageViewTest(TestCase):
-    def SetUp(self):
+    def setUp(self):
         Post.objects.creat(text='this is another test')
 
     def test_view_url_exists_at_proper_location(self):
